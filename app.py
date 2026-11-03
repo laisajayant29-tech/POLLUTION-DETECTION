@@ -1,5 +1,5 @@
-
 import streamlit as st
+import tensorflow as tf
 import numpy as np
 from PIL import Image
 import os
@@ -55,7 +55,7 @@ def train_model():
         metrics=["accuracy"]
     )
 
-    model.fit(data, epochs=50)
+    model.fit(data, epochs=400)
 
     return model, class_names
 
