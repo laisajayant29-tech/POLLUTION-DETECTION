@@ -22,7 +22,7 @@ st.divider()
 def load_model():
 
     model = tf.keras.models.load_model(
-        "pollution_model.keras"
+        "Pollution.keras"
     )
 
     with open("class_names.txt", "r") as f:
